@@ -1,2 +1,5 @@
 ---
-# tasks file for isv-linux-role
+- name: Copy files to install w3id pam for {{ inventory_hostname_short }}
+  debug:
+    msg: "Just a test!"
+  

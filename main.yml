@@ -3,5 +3,14 @@
   hosts: all
   become: true
   gather_facts: true
+
+  pre-tasks:
+  
+  - name: Validate if there is a firewall rule to a URL
+    run_once: true
+    shell: curl https://ipinfo.io/ip
+    register: curl_urlaccess
+    failed_when: ( curl_urlaccess.rc > 0 )
+
   roles:
     - role: isv-linux-role
