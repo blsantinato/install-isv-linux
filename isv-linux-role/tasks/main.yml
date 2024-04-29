@@ -1,10 +1,10 @@
 ---
 - name: "Copy files to install w3id pam for {{ inventory_hostname_short }}"
   ansible.builtin.unarchive:
-  src: "{{ playbook_dir }}/isv-linux-role/files/rhel-{{ ansible_distribution_major_version }}.zip"
-  dest: "/tmp/"
-  mode: 0755
-
+    src: "{{ playbook_dir }}/isv-linux-role/files/rhel-{{ ansible_distribution_major_version }}.zip"
+    dest: "/tmp/"
+    mode: 0755
+ 
 - name: "Install ISV PAM file for {{ ansible_architecture }} System"
   ansible.builtin.dnf:
     name: "/tmp/{{ item }}"
