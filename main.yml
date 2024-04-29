@@ -1,17 +1,25 @@
 ---
 - name: Install ISV Linux
-  hosts: all
+  hosts: localhost
   become: true
   gather_facts: true
 
-  pre_tasks:
-  - name: Validate if there is a firewall rule to a URL
-    run_once: true
-    ansible.builtin.shell: curl https://ipinfo.io/ip
-    register: curl_urlaccess
-    failed_when: ( curl_urlaccess.rc > 0 )
-       
   tasks:
-    - name: Run isv-linux-role
-      ansible.builtin.include_role:
-        name: isv-linux-role
+    - block:
+       - name: Validate if there is a firewall rule to a URL
+         become: false
+         ansible.builtin.uri: 
+           url: https://ipinfo.io/ip
+         register: urlaccess
+      
+       - name: Run isv-linux-role
+         ansible.builtin.include_role:
+           name: isv-linux-role
+      #rescue:
+      #  - debug:
+      #      msg: "Falhou"
+      #  - debug:
+      #      var: urlaccess
+      #always:
+      #  - debug:
+      #      msg: "Always"
