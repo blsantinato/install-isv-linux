@@ -5,13 +5,7 @@
   gather_facts: true
 
   tasks:
-    - block:
-       - name: Validate if there is a firewall rule to a URL
-         become: false
-         ansible.builtin.uri: 
-           url: https://ipinfo.io/ip
-         register: urlaccess
-      
+    - block:     
        - name: Run isv-linux-role
          ansible.builtin.include_role:
            name: isv-linux-role
