@@ -9,6 +9,7 @@
        - name: Run isv-linux-role
          ansible.builtin.include_role:
            name: isv-linux-role
+         when: ansible_distribution == 'RedHat'
       #rescue:
       #  - debug:
       #      msg: "Falhou"
