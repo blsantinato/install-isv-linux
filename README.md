@@ -23,16 +23,16 @@ Click on launch button :arrow_down:
 ![launch](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image1.jpg)
 
 Select Inventory to run:
-![launch](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image2.jpg)
+![Inventory](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image2.jpg)
 
 Select Credential:
-![launch](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image3.jpg)
+![Credential](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image3.jpg)
 
 Select Limit Server if necessary:
-![launch](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image4.jpg)
+![Limit](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image4.jpg)
 
 Fill the Survey:
-![launch](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image5.jpg)
+![Survey](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image5.jpg)
 
 Client ID: This Variable can be found in 2faa Portal 
 (https://ibm-2faaas-srp.prod.identity-services.intranet.ibm.com)
@@ -41,12 +41,12 @@ OBF Client Secret: This Variable can be found in 2faa Portal
 (https://ibm-2faaas-srp.prod.identity-services.intranet.ibm.com)
 
 **Click on Rotate Button on 2fa Portal (example below)
-![launch](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image6.jpg)
+![2fa](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image6.jpg)
 
 Last step, Launch this template and wait to finish. 
 
 Validate the access in the server and check if w3id Multifactor will prompt in SSH Session. 
-![launch](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image7.jpg)
+![Validate](https://github.ibm.com/SreDistributedBrazilS1/install-isv-linux/tree/main/images/image7.jpg)
 
 Author Information
 ------------------
