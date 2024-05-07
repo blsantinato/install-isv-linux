@@ -8,12 +8,6 @@ Requirements
 
 This template need to be run into AAP Application and will execute a role to Install and Configure IBM Security Verify Gateway for Linux PAM (Pluggable Authentication Modules).
 
-Role Variables
---------------
-
-This template has two variables that is part of isv-linux-role that can be found in the below link:
-https://github.ibm.com/SreDistributedBrazilS1/isv-linux-role/
-
 Usage Playbook
 ----------------
 
