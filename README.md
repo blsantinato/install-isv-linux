@@ -17,14 +17,44 @@ https://github.ibm.com/SreDistributedBrazilS1/isv-linux-role/
 Usage Playbook
 ----------------
 
-Login into AAP Application and open [automation]()
+Login into AAP Application and open [automation](https://cio-ansible-automation.ibm.com/#/templates/job_template/4631/details)
 
-License
--------
+Click on launch button :arrow_down:
+![launch](https://github.ibm.com/Bruno-Santinato/install-isv-linux/blob/main/images/image1.jpg)
 
-BSD
+Select Inventory to run:
+![launch](https://github.ibm.com/Bruno-Santinato/install-isv-linux/blob/main/images/image2.jpg)
+
+Select Credential:
+![launch](https://github.ibm.com/Bruno-Santinato/install-isv-linux/blob/main/images/image3.jpg)
+
+Select Limit Server if necessary:
+![launch](https://github.ibm.com/Bruno-Santinato/install-isv-linux/blob/main/images/image4.jpg)
+
+Fill the Survey:
+![launch](https://github.ibm.com/Bruno-Santinato/install-isv-linux/blob/main/images/image5.jpg)
+
+Client ID: This Variable can be found in 2faa Portal 
+(https://ibm-2faaas-srp.prod.identity-services.intranet.ibm.com)
+
+OBF Client Secret: This Variable can be found in 2faa Portal 
+(https://ibm-2faaas-srp.prod.identity-services.intranet.ibm.com)
+
+**Click on Rotate Button on 2fa Portal (example below)
+![launch](https://github.ibm.com/Bruno-Santinato/install-isv-linux/blob/main/images/image6.jpg)
+
+Last step, Launch this template and wait to finish. 
+
+Validate the access in the server and check if w3id Multifactor will prompt in SSH Session. 
+![launch](https://github.ibm.com/Bruno-Santinato/install-isv-linux/blob/main/images/image7.jpg)
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Created by Bruno Santinato
+
+CIO Hybrid Cloud – SRE 
+
+Squad: SRE_Distributed_Brazil_S1
+
+Email : bruno.santinato@ibm.com
