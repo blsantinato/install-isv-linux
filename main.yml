@@ -10,6 +10,11 @@
          ansible.builtin.include_role:
            name: isv-linux-role
          when: ansible_distribution == 'RedHat'
+
+       - name: Run isv-aix-role
+         ansible.builtin.include_role:
+           name: isv-aix-role
+         when: ansible_system == 'AIX'
       #rescue:
       #  - debug:
       #      msg: "Falhou"

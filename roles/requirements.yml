@@ -2,3 +2,6 @@
 - src: git@github.ibm.com:SreDistributedBrazilS1/isv-linux-role.git
   scm: git 
   version: main
+- src: git@github.ibm.com:SreDistributedBrazilS1/isv-aix-role.git
+  scm: git 
+  version: main
